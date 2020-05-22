@@ -154,3 +154,45 @@ hr.style1.small{
 .searchbar{
     display: inline-block;
 }
+.message {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.message::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.message img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.message img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.message-time-right {
+  float: right;
+  color: #aaa;
+}
+
+.message-time-left {
+  float: left;
+  color: #999;
+}
